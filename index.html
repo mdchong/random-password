@@ -6,7 +6,7 @@
     <meta name="author" content="Michelle Chong">
     <meta name="description" content="Generate a secure password and protect yourself!">
 
-    <!-- Google Font Karia -->
+    <!-- Google Font Karla -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -24,13 +24,15 @@
 <body>
     <main>
         <div class="container">
-            <h2>Generate a random password</h2>
-            <p>Never use an insecure password again.</p>
+            <h2 class="header">Generate a <span class="header second">random password</span></h2>
+            <p class="description">Never use an insecure password again! 🥳🎉</p>
 
-            <button id="password-el">Generate passwords</button>
+            <button id="password-el" onclick="randomPasswordGenerator()"">Generate passwords</button>
 
-            <div id="randomOne"></div>
-            <div id="randomTwo"></div>
+            <div class="password-generator">
+                <p class="random one"id="randomOne"></p>
+                <p class="random two" id="randomTwo"></p>
+            </div>
         </div>
     </main>
 
